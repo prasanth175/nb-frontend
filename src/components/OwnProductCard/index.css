@@ -1,0 +1,132 @@
+.own-book-list-item {
+  padding: 20px;
+  box-shadow: 4px 8px 10px 0px #dae3e0;
+  width: 50%;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.own-book-item {
+  display: flex;
+  background-color: #ffffff;
+  border-top: 1px solid rgb(200, 199, 199);
+  border-bottom: 1px solid rgb(200, 199, 199);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.own-book-image {
+  height: 250px;
+  width: 180px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid rgb(200, 199, 199);
+  padding: 5px;
+}
+
+.view-btn-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.own-book-content {
+  margin-left: 30px;
+  width: 100%;
+  margin: 20px;
+}
+
+.view-btn {
+  border: 1px solid blue;
+  color: blue;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+.view-btn:hover {
+  box-shadow: 4px 8px 10px 0px #6c8ce5;
+  padding: 10px 20px;
+}
+
+.own-product-selling-price {
+  font-weight: bold;
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+.own-product-desc {
+  color: grey;
+  font-family: 'Roboto';
+  font-weight: 450;
+  font-size: 15px;
+}
+
+.own-product-title {
+  color: rgb(9, 17, 86);
+  font-family: 'Franklin Gothic Medium';
+}
+
+@media (max-width: 900px) {
+  .own-book-list-item {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .own-book-list-item {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .own-book-image {
+    height: 200px;
+    width: 150px;
+  }
+
+  .own-product-title {
+    font-size: 100%;
+  }
+
+  .own-product-desc {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .own-book-item {
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+
+  .own-book-image {
+    align-self: center;
+  }
+
+  .view-btn-price {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .own-book-content {
+    align-items: center;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .own-book-list-item {
+    width: 70vw;
+    height: 100%;
+  }
+}
+
+/* @media (max-width: 440px) {
+  .view-btn-price {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+} */

@@ -1,0 +1,38 @@
+.cart-remove-btn {
+  border: 1px solid rgb(11, 76, 65);
+  color: rgb(11, 76, 65);
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.cart-remove-btn:hover {
+  background-color: rgb(11, 76, 65);
+  color: white;
+}
+
+.pay-btn {
+  background-color: rgb(66, 185, 66);
+  padding: 8px 15px;
+  color: white;
+  border-radius: 5px;
+}
+
+.own-product-title {
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .cart-remove-btn {
+    margin-bottom: 20px;
+  }
+
+  .own-product-title {
+    text-align: left;
+    font-size: 13px;
+  }
+
+  .own-product-desc {
+    text-align: left;
+    font-size: 10px;
+  }
+}

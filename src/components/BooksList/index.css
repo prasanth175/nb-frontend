@@ -1,0 +1,189 @@
+.books-header {
+  background-color: rgba(232, 236, 235, 0.677);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.not-found-books {
+  width: 600px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin-left: 20px;
+}
+
+.search-heading {
+  margin-top: 7px;
+  color: rgb(92, 168, 222);
+  font-family: 'Courier New';
+  text-align: center;
+}
+
+.books-search-input {
+  width: 60%;
+  padding: 10px;
+  border-width: 0px;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.books-search-input:focus {
+  box-shadow: 4px 8px 16px 0px #aaf0f6;
+}
+
+.products-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.books-empty-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-product-heading {
+  font-size: 40px;
+  font-family: 'Bree Serif';
+  font-weight: 500;
+  margin-top: 0px;
+  color: rgb(32, 32, 171);
+}
+
+.books-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.books-categories-container {
+  display: flex;
+}
+
+.category-section {
+  width: 400px;
+  box-shadow: 4px 8px 16px 0px #bfbfbf;
+}
+
+/* 
+.all-products-section {
+  border: 1px solid black;
+} */
+
+.all-books-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.books-category-heading {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.all-products-section {
+  width: 100%;
+}
+
+.clear-filters-btn {
+  background-color: rgb(41, 41, 144);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: 450;
+  font-family: 'Roboto';
+}
+
+.category-drop-down {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .books-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+  .search-bar {
+    justify-content: center;
+  }
+
+  .clear-filters-btn {
+    font-size: 50%;
+  }
+
+  .not-found-books {
+    width: 80%;
+  }
+}
+
+@media (max-width: 650px) {
+  .empty-product-heading {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .category-section {
+    display: none;
+  }
+
+  .books-empty-container {
+    height: 60vh;
+  }
+
+  .books-categories-container {
+    flex-direction: column;
+  }
+
+  .category-drop-down {
+    display: block;
+    align-self: flex-end;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: transparent;
+    border-width: 0px;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 4px 8px 16px 0px rgb(218, 245, 218);
+    margin-top: 20px;
+  }
+
+  .category-drop-down:focus {
+    outline: none;
+  }
+
+  .all-products-section {
+    align-self: center;
+  }
+
+  .books-item {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 300px) {
+  .empty-product-heading {
+    font-size: 20px;
+  }
+}

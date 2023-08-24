@@ -1,0 +1,169 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  background-color: rgb(241, 245, 245);
+  padding-bottom: 50px;
+  margin-top: 72px;
+}
+
+.about {
+  display: flex;
+  width: 70vw;
+}
+
+.about-img {
+  height: 100%;
+  width: 60%;
+}
+
+.about-content {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-heading {
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.about-txt {
+  color: grey;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 420;
+  line-height: 20px;
+}
+
+/*----------------About Us ------------------*/
+
+.about-us-container {
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+}
+
+.about-us-main-container {
+  display: flex;
+  justify-content: center;
+  background-color: #063547;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.about-us-left {
+  width: 40%;
+}
+
+.about-us-icon {
+  background-color: rgb(221, 217, 217);
+  padding: 5px;
+  font-size: 40px;
+  border-radius: 50%;
+  color: black;
+  margin-right: 10px;
+}
+
+.about-us-link {
+  margin-top: 5px;
+  color: rgb(231, 231, 231);
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.4s ease-in 0.1s;
+  cursor: pointer;
+}
+
+.about-us-link-item {
+  text-decoration: none;
+  color: white;
+}
+
+.about-us-link:hover {
+  letter-spacing: 2px;
+}
+
+/*----------------------Footer ----------------------------*/
+
+.footer {
+  background-color: rgb(226, 248, 248);
+}
+
+.footer-txt {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding: 30px;
+  font-size: 17px;
+  font-family: 'Roboto';
+  font-weight: 450;
+  color: rgb(86, 84, 84);
+}
+
+/* ----------------------About----------------*/
+
+@media (max-width: 780px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+  .about-content {
+    margin-left: 0px;
+  }
+
+  .about-txt {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 404px) {
+  .about-heading {
+    font-size: 100%;
+  }
+
+  .about-txt {
+    font-size: 70%;
+  }
+}
+
+/* ----------------------About Us----------------*/
+
+@media (max-width: 600px) {
+  .about-us-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us-left {
+    width: 100%;
+  }
+
+  .about-us-txt {
+    width: 100%;
+    color: rgb(214, 210, 210);
+  }
+}
+
+@media (max-width: 404px) {
+  .about-us-heading {
+    font-size: 100%;
+  }
+
+  .about-us-txt {
+    font-size: 70%;
+  }
+
+  .about-us-link {
+    font-size: 70%;
+  }
+}
